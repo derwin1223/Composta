@@ -15,18 +15,21 @@ export class MensajesComponent implements OnInit {
     {
       Nombre: "Moises",
       Apellido: "Paez",
-      fecha : "2017-0412"
+      fecha : "2017-04-12",
+      mensaje: "Composta Inestable"
     },
     {
       Nombre: "Juan",
       Apellido: "Paez",
-      fecha : "2017-0412"
+      fecha : "2017-04-12",
+      mensaje: "Composta Inestable"
     },
-    {
-      Nombre: "Moises",
-      Apellido: "Paez",
-      fecha : "2017-0412"
-    }
+  
+
+ 
+    
+   
+
 
 
   ]
@@ -36,6 +39,7 @@ export class MensajesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
   medidas(){
     this.servicioSql.usuario().subscribe((data: any) => {

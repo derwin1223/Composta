@@ -11,7 +11,7 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 body {
@@ -38,9 +38,6 @@ Copiar esto
   background: linear-gradient(#ffb92d, transparent);
   margin-bottom: 1.25rem;
 }
-
-
-
 
 .seccion-perfil-usuario .perfil-usuario-portada {
   display: block;
@@ -185,11 +182,11 @@ Copiar esto
 }
 
 .seccion-perfil-usuario .boton-redes.facebook {
-  background-color: #5955FF;
+  background: linear-gradient(45deg, #ffb92d, #40A7FF)  
 }
 
 .seccion-perfil-usuario .boton-redes.twitter {
-  background-color: #35E1BF;
+  background: linear-gradient(45deg, #ffb92d, #40A7FF)  
 }
 
 .seccion-perfil-usuario .boton-redes.instagram {
@@ -239,7 +236,10 @@ Copiar esto
 #span1{
   z-index: 3;
 }
-
+#Icon {
+  font-size: 3em;
+  align-items: flex-end;
+}
 .card {
   position: relative;
   height: 24.5rem;

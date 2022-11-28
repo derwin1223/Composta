@@ -17,6 +17,17 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  IrNavigator(Ir: any){
+    console.log
+    if(Ir == 1){
+      this.router.navigateByUrl("/mensajes");
+    }else if(Ir == 2){
+      this.router.navigateByUrl("/mensajes");
+    }else if(Ir == 2){
+      this.router.navigateByUrl("/");
+    }
+    
+  }
 
   compostas(){
     this.servicioSql.obtenerComposta().subscribe((data: any) => {

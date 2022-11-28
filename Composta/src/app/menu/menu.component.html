@@ -31,7 +31,7 @@
 
   <title>Composta</title>
 </head>
-
+<app-menu-all></app-menu-all>
 <body>
   <section class="seccion-perfil-usuario">
     <div class="perfil-usuario-header">
@@ -50,7 +50,7 @@
     <div class="perfil-usuario-body">
       <div class="perfil-usuario-bio">
         <h3 class="titulo">Moises Guzmán </h3>
-        <p class="texto" style="text-align: center;"> Mi Primer proyecto ----Angular Developer--- > </p>
+        
       </div>
       <div class="perfil-usuario-footer">
         <ul class="lista-datos">
@@ -67,23 +67,22 @@
         </ul>
       </div>
       <div class="redes-sociales">
-        <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
-        <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
-        <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
+        <a  (click)="IrNavigator(1)" class="boton-redes instagram "><i class="bi bi-table"></i></a>
+        <a  (click)="IrNavigator(2)" class="boton-redes instagram "><i class="bi bi-chat-dots"></i></a>
+        <a  (click)="IrNavigator(3)" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
       </div>
     </div>
     <br>
     <div class="container-fluid p-5 bg text-white text-center" id="Transfondo">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p>
+      <h1>Compostas</h1>
+      <p>Variedades</p>
     </div>
     <div class="perfil-usuario-body mt-5">
       <div class="perfil-usuario-bio">
         <div class="container">
           <div class="row">
-            <h2></h2>
-            <table>
-              <thead>
+            <table class="table">
+              <thead class="table-striped">
                 <tr>
                   <th>ID</th>
                   <th>Detalles</th>
@@ -106,8 +105,8 @@
     </div>
     <br>
     <div class="container-fluid p-5 bg text-white text-center" id="Transfondo">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p>
+      <h1>Informacion</h1>
+      <p>Guia del usuario</p>
     </div>
     <br>
     <div>
@@ -116,7 +115,7 @@
           <div class="card col-sm">
             <div id="span1">
               <img class="card-img-top"
-              src= "https://blog.panasonic.es/wp-content/uploads/2020/02/comp01.jpg"
+              src= "../../assets/Logo.jpg"
               alt="image" style="width:100%" class="rounded">
               <div class="card-body">
                 <h4 class="card-title">John Doe</h4>
@@ -140,7 +139,7 @@
           <div class="card col-sm">
             <div id="span1">
               <img class="card-img-top"
-              src= "https://blog.panasonic.es/wp-content/uploads/2020/02/comp01.jpg"
+              src= "../../assets/Logo.jpg"
               alt="image" style="width:100%" class="rounded">
               <div class="card-body">
                 <h4 class="card-title">John Doe</h4>
@@ -159,11 +158,7 @@
   <div class="mis-redes" style="display: block;position: fixed;bottom: 1rem;left: 1rem; opacity: 0.5; z-index: 1000;">
     <p style="font-size: .75rem;">Compost</p>
     <div>
-      <a target="_blank" href="https://www.facebook.com/ApockGraficos"><i class="fab fa-facebook-square"></i></a>
-      <a target="_blank" href="https://twitter.com/ApockGraficos"><i class="fab fa-twitter"></i></a>
-      <a target="_blank" href="https://www.instagram.com/ApockGraficos"><i class="fab fa-instagram"></i></a>
-      <a target="_blank" href="https://www.youtube.com/channel/UC15DkMZQ80aoW_Rqk4n2T_w"><i
-          class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/+18297679396" ><i class="bi bi-whatsapp" id="Icon"></i></a>
     </div>
   </div>
   <!--====  End of tarjeta  ====-->
