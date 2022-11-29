@@ -8,6 +8,7 @@ import { MenuAllComponent } from './menu-all/menu-all.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     MenuAllComponent,
     MensajesComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
