@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
   IrNavigator(Ir: any){
     console.log
     if(Ir == 1){
-      this.router.navigateByUrl("/mensajes");
+      this.router.navigateByUrl("/dash");
     }else if(Ir == 2){
       this.router.navigateByUrl("/mensajes");
     }else if(Ir == 2){
