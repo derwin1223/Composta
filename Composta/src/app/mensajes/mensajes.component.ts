@@ -34,18 +34,12 @@ export class MensajesComponent implements OnInit {
 
   ]
   constructor(public http: HttpClient, public router: Router,public servicioSql: SQLservicioService) {
-    this.medidas()
    }
 
   ngOnInit(): void {
   }
 
 
-  medidas(){
-    this.servicioSql.usuario().subscribe((data: any) => {
-      this.resultado = data
-      console.log(this.resultado)
-    });
-  }
+  
   }
 

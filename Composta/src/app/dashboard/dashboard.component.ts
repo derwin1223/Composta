@@ -1,4 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { SQLservicioService } from '../serviciospi.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +10,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  resultado: any ;
+  suscription:any = Subscription;
+  constructor(public http: HttpClient, public router: Router,public servicioSql: SQLservicioService) { 
+    this.medidas()
+    this.resultado
+    this.suscription = this.servicioSql.refresh$.subscribe(() =>
+    this.medidas()
+    )
+    
   }
 
+  ngOnInit(): void {
+
+  }
+  ngOnDestroy():void{
+    this.suscription.unsubscribe();
+    console.log()
+  }
+  medidas(){
+    this.servicioSql.usuario().subscribe((data: any) => {
+     this.resultado = [data.at(-1)]
+    });
+  }
+
+  
 }

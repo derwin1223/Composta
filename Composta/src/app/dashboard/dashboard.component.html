@@ -43,7 +43,8 @@
                             <i class="bi bi-thermometer-half"></i>
                         </div>
                         <p class="card-category">Temperatura</p>
-                        <h3 class="card-title">49
+                        <h3 *ngFor="let item of this.resultado"  class="card-title">{{item.temperatura}}
+
                             <small>°C</small>
                         </h3>
                     </div>
@@ -62,8 +63,19 @@
                         <div class="card-icon">
                             <i class="bi bi-fan"></i>
                         </div>
+<<<<<<< Updated upstream
                         <p class="card-category">Oxigeno</p>
                         <h3 class="card-title">15.5 <i class="bi bi-arrow-left-right"></i></h3>
+||||||| constructed merge base
+                        <p class="card-category">Revenue</p>
+                        <h3 class="card-title">$34,245</h3>
+=======
+                        <p class="card-category">CO2</p>
+                        <h3 *ngFor="let item of this.resultado"  class="card-title">{{item.gas}}
+
+                            <small>g/mol</small>
+                        </h3>
+>>>>>>> Stashed changes
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -80,10 +92,18 @@
                         <div class="card-icon">
                             <i class="bi bi-moisture"></i>
                         </div>
+<<<<<<< Updated upstream
                         <p class="card-category">Humedad</p>
                         <h3 class="card-title">35.0 g/m3
                             <small><i class="bi bi-caret-up-fill"></i></small>
                         </h3>
+||||||| constructed merge base
+                        <p class="card-category">Fixed Issues</p>
+                        <h3 class="card-title">75</h3>
+=======
+                        <p  class="card-category">Metano</p>
+                        <h3 *ngIf="this.resultado !== undefined"  class="card-title">75</h3>
+>>>>>>> Stashed changes
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -100,8 +120,19 @@
                         <div class="card-icon">
                             <i class="bi bi-droplet-half"></i>
                         </div>
+<<<<<<< Updated upstream
                         <p class="card-category">Nivel de Agua</p>
                         <h3 class="card-title">55.0 L</h3>
+||||||| constructed merge base
+                        <p class="card-category">Followers</p>
+                        <h3 class="card-title">+245</h3>
+=======
+                        <p class="card-category">Nivel de agua</p>
+                        <h3 *ngFor="let item of this.resultado"  class="card-title">{{item.nivel_agua}}
+
+                            <small>L</small>
+                        </h3>
+>>>>>>> Stashed changes
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -121,10 +152,22 @@
                         <div class="card-icon">
                             <i class="bi bi-radioactive"></i>
                         </div>
+<<<<<<< Updated upstream
                         <p class="card-category">Metano</p>
                         <h3 class="card-title">66.0
                             <small><i class="bi bi-caret-up-fill"></i></small>
+||||||| constructed merge base
+                        <p class="card-category">Temperatura</p>
+                        <h3 class="card-title">49
+                            <small>°C</small>
+=======
+                        <p class="card-category">Humedad</p>
+                        <h3 *ngFor="let item of this.resultado"  class="card-title">{{item.humedad}}
+
+                            <small>g/mol</small>
+>>>>>>> Stashed changes
                         </h3>
+                        
                     </div>
                     <div class="card-footer">
                         <div class="stats">
