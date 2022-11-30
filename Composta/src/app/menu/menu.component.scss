@@ -53,6 +53,34 @@ Copiar esto
   background-size: cover;
   */
 }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	
+	position: absolute;
+	z-index: 1;
+}
+
+  .drag-drop span.desc {
+  display: block;
+  font-size: .7em;
+  padding: 0 .5em;
+  color: #000;
+  }
+   
+  input[type="file"] {
+  height: 10em;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 3;
+  }
+   
+  
+
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
   position: absolute;
