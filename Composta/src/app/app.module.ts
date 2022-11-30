@@ -9,7 +9,7 @@ import { MensajesComponent } from './mensajes/mensajes.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
 
 @NgModule({
   declarations: [
